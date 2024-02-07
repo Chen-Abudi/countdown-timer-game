@@ -23,6 +23,14 @@ This is a mini-game of timer challenges showcasing the estimation countdown of t
 
 ---
 
+## State **_VS_** Refs:
+
+| **`State`**                                                                              | **`Refs`**                                                                                                                      |
+| :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| **`-`** Causes component re-evaluation (re-execution) when changes.                      | **`-`** Do not cause component re-evaluation when changed.                                                                      |
+| **`-`** Should be used for values that are directly reflected in the UI.                 | **`-`** Can be used to gain direct access to DOM element access (→ great for reading values or accessing certain browser APIs). |
+| **`-`** Should not be used for "behind the scenes" values that have no direct UI impact. |                                                                                                                                 |
+
 # ✨ How to Get Started:
 
 ## Clone Project:
