@@ -19,7 +19,7 @@ This is a mini-game of timer challenges showcasing the estimation countdown of t
 - JavaScript
 - CSS3
 - Vite
-- Use Ref
+- Use Ref + Forward Ref
 
 ---
 
