@@ -20,11 +20,11 @@ This is a mini-game of timer challenges showcasing the estimation countdown of t
 - CSS3
 - Vite
 - Use Ref + Forward Ref
-- React Hooks: **`useImperativeHandle`** customizes the values exposed by a child component's imperative API, optimizing and controlling its external interface.
+- **React Hooks**: **`useImperativeHandle`** customizes the values exposed by a child component's imperative API, optimizing and controlling its external interface.
 
 ---
 
-## State **_VS_** Refs:
+## State **`VS`** Refs:
 
 | **`State`**                                                                              | **`Refs`**                                                                                                                      |
 | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
