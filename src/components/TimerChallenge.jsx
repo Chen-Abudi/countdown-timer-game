@@ -5,9 +5,6 @@ function TimerChallenge({ title, targetTime }) {
   const timer = useRef();
   const dialog = useRef();
 
-  // const [isTimerStarted, setIsTimerStarted] = useState(false);
-  // const [isTimerExpired, setIsTimerExpired] = useState(false);
-
   const [isTimeRemaining, setIsTimeRemaining] = useState(targetTime * 1000);
 
   const timeIsActive =
@@ -25,11 +22,7 @@ function TimerChallenge({ title, targetTime }) {
   function handleStart() {
     timer.current = setInterval(() => {
       setIsTimeRemaining((prevTimeRemaining) => prevTimeRemaining - 10);
-      // setIsTimerExpired(true);
-      // dialog.current.open();
     }, 10);
-
-    // setIsTimerStarted(true);
   }
 
   function handleStop() {
