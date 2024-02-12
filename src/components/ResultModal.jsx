@@ -7,6 +7,7 @@ const ResultModal = forwardRef(function ResultModal(
   const dialogRef = useRef();
 
   const userLost = remainingTime <= 0;
+  // Calculate the remaining time in seconds with 2 decimal places
   const calculatedRemainingTime = (remainingTime / 1000).toFixed(2);
   const score = Math.round((1 - remainingTime / (targetTime * 1000)) * 100);
 
@@ -19,7 +20,7 @@ const ResultModal = forwardRef(function ResultModal(
   });
 
   return (
-    <dialog ref={dialogRef} className="result-modal">
+    <dialog ref={dialogRef} className="result-modal" onClose={onReset}>
       {userLost && <h2>Your lost</h2>}
       {/* If user didn't lose, then output the score */}
       {!userLost && <h2>Your Score: {score}</h2>}
